@@ -4,9 +4,11 @@ This is the final project from Dicoding, which is data analysis with Python usin
 ## Preview
 <p align="center">
   <img src="ss1.jpg" />
+  
 ## File Structures
-```
 
+```
+.
 ├── dashboard
 │   ├── bike.jpeg
 │   ├── dashboard.py
@@ -14,13 +16,15 @@ This is the final project from Dicoding, which is data analysis with Python usin
 │   └── hour.csv
 ├── data
 │   ├── day.csv
-|   └── hour.csv
+│   └── hour.csv
 ├── ss.jpeg
 ├── README.md
 ├── Proyek_Analisis_Data.ipynb
 ├── url.txt
 └── requirements.txt
 ```
+
+
 
 ## Project work flow
 1. Data Wrangling: 
