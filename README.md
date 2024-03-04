@@ -2,7 +2,8 @@
 This is the final project from Dicoding, which is data analysis with Python using bike-sharing.
 
 ## Preview
-
+<p align="center">
+  <img src="ss1.jpg" />
 ## File Structures
 ```
 
