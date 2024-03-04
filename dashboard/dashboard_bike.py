@@ -8,8 +8,8 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import streamlit as st
 #load dataset
-day_df = pd.read_csv("day.csv")
-hour_df = pd.read_csv("hour.csv")
+day_df = pd.read_csv("dashboard/day.csv")
+hour_df = pd.read_csv("dashboard/hour.csv")
 
 #cleaning day data
 #convert dteday(object) menjadi datetime
