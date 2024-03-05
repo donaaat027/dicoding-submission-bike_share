@@ -143,7 +143,7 @@ with col3:
 st.set_option('deprecation.showPyplotGlobalUse', False)  # Disable deprecation warning
 st.write("Graph depicting the trend of bike-sharing usage between {0}, and {1}.".format(start_date, end_date))
 
-# Plot using seaborn
+# Plot 
 fig = px.line(daily_rent_bike, x='dateday', y='count', title='Bike-Sharing Tren ({0} - {1})'.format(start_date, end_date))
 fig.update_xaxes(title='date')
 fig.update_yaxes(title='Total')
@@ -153,7 +153,7 @@ st.plotly_chart(fig, use_container_width=True)
 # Plot monhthly
 result = day_df.resample(rule='M', on='dateday').agg({"count": "sum", "casual": "sum", "registered": "sum"})
 fig = px.line(result, x=result.index.strftime('%B %Y'), y=['count', 'casual', 'registered'],
-              title="Monthly Count of Bikeshare Rides",
+              title="Monthly Count of Bike-Sharing",
               labels={'x': 'Month', 'y': 'Total'},
               markers=True)
 st.plotly_chart(fig, use_container_width=True)
@@ -163,7 +163,7 @@ result = hour_df.groupby(by="hour").agg({'count':'sum','casual':'sum','registere
 # Plot using Plotly Express
 fig = px.line(result, x='hour', y=['count', 'casual', 'registered'], 
               labels={'hour': 'Hour', 'value': 'Total Rides', 'variable': 'Type'},
-              title='Hourly Bike-sharing Rides',
+              title='Hourly count of Bike-sharing',
               markers=True)
 
 fig.update_layout(xaxis=dict(tickmode='linear', dtick=1), 
